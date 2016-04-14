@@ -1,0 +1,19 @@
+Function timsttkytu(str, kyTuMuonTim, STTMuonLay)
+    ketqua = 0
+    checkkq = False
+    For i = 1 To Len(str)
+        ch = Mid(str, i, 1)
+        If (ch = kyTuMuonTim) Then
+            ketqua = ketqua + 1
+            If (ketqua = STTMuonLay) Then
+                checkkq = True
+                Exit For
+            End If
+        End If
+    Next
+    If checkkq = True Then
+        timsttkytu = i
+    Else
+        timsttkytu = 0
+    End If
+End Function
