@@ -2,7 +2,7 @@ Function timsttkytu(str, kyTuMuonTim, STTMuonLay)
     ketqua = 0
     checkkq = False
     For i = 1 To Len(str)
-        ch = Mid(str, i, 1)
+        ch = Mid(str, i, Len(kyTuMuonTim))
         If (ch = kyTuMuonTim) Then
             ketqua = ketqua + 1
             If (ketqua = STTMuonLay) Then
